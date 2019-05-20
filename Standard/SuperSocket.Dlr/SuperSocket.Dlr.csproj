@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.7.0</Version>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>SupersocketSign.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SuperSocket.Common\SuperSocket.Common.csproj" />
+    <ProjectReference Include="..\SuperSocket.SocketBase\SuperSocket.SocketBase.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Scripting">
+      <HintPath>..\..\Reference\DLR\Net40\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
